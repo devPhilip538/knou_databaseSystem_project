@@ -1,0 +1,15 @@
+spring:
+    data:
+        maria:
+            jdbc-url: jdbc:mariadb://knoudb-rds.c7cfvgdlqhhl.ap-northeast-2.rds.amazonaws.com:3306/knouDB
+            driver-class-name: org.mariadb.jdbc.Driver
+            username: admin
+            password: admin538
+        jpa:
+            properties:
+                hibernate:
+                    #show_sql: true
+                    format_sql: true
+                    temp:
+                        use_jdbc_metadata_defaults: false
+                    generate-ddl: true
